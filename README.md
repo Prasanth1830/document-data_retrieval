@@ -14,7 +14,7 @@ The system employs a strict Retrieval-Augmented Generation (RAG) architecture to
 graph TD
     A[User PDF Upload] --> B[Data Ingestion Pipeline]
     B --> C[Text Chunking & Tokenization]
-    C --> D[Embedding Generator <br/>text-embedding-3-small]
+    C --> D[Embedding Generator <br/>llama-text-embed-v2]
     D --> E[(Pinecone Vector DB)]
     
     F[User Question] --> G[Strict Grounding Prompt Engine]
